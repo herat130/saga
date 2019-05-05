@@ -8,5 +8,12 @@ export const fetchPeopleSuccess = (people) => {
 export const getAllPeople = () => {
   return {
     type: 'FETCH_PEOPLE',
-  }
-}
+  };
+};
+
+export const getRandomValues = () => {
+  debugger;
+  return {
+    type: 'GET_RANDOM_VALUES',
+  };
+};

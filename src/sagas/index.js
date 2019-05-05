@@ -1,6 +1,6 @@
 import { take, put, call, fork, select, takeEvery, all } from 'redux-saga/effects'
 import Axios from "axios";
-import { fetchPeopleSuccess } from '../actions/people.action';
+import { fetchPeopleSuccess, getRandomValues } from '../actions/people.action';
 
 export function* getAllPeople() {
   const people = yield call(fetchPeople);
@@ -13,4 +13,9 @@ function fetchPeople() {
 
 export default function* root() {
   yield all([fork(getAllPeople)])
+}
+
+export function* getRandomValue() {
+  debugger;
+  yield put(getRandomValues());
 }
