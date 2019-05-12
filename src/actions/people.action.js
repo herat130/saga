@@ -11,8 +11,19 @@ export const getAllPeople = () => {
   };
 };
 
+export const asyncAction = () => {
+  return {
+    type: 'COUNTER_INCREMENT',
+  }
+};
+
+export const ciAction = ()=>{
+  return {
+    type: 'C_I',
+  }
+}
+
 export const getRandomValues = () => {
-  debugger;
   return {
     type: 'GET_RANDOM_VALUES',
   };
